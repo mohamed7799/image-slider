@@ -1,0 +1,77 @@
+@import './resst';
+
+$main-color:#45b5ff;
+
+
+.selected-dot {
+    background-color: $main-color;
+}
+
+.hide-dot {
+    background-color: #aaaaaa;
+}
+
+
+.selected {
+    width: 100%;
+    border: 1px solid $main-color;
+}
+
+.hide {
+    width: 0%;
+    border: none;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: $main-color;
+}
+
+#img-cont {
+    width: 50%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    img {
+
+        height: 80%;
+
+        border-radius: 5px;
+        transition: .5s;
+    }
+}
+
+#img-btns {
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+
+    & i {
+        font-size: 2rem;
+        transition: .3s;
+        color: $main-color;
+        opacity: 0.7;
+
+        &:hover {
+            cursor: pointer;
+            opacity: 1;
+        }
+    }
+}
+
+#dots {
+    display: flex;
+    margin: 1rem;
+    width: 10%;
+    justify-content: space-evenly;
+}
+
+.dot {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+
+    border-radius: 50%;
+}
